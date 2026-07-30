@@ -28,18 +28,18 @@ export const metadata: Metadata = {
   authors: [{ name: "Intech Studio" }],
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://intechstudio.com",
+    locale: "id_ID",
+    url: "https://intechstudio.id",
     siteName: "Intech Studio",
     title: "Intech Studio | Premium Custom Software Development",
     description:
       "World-class software house specializing in custom software development, business automation, POS systems, and WhatsApp commerce.",
     images: [
       {
-        url: "https://intechstudio.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Intech Studio",
+        url: "https://intechstudio.id/logo.png",
+        width: 800,
+        height: 800,
+        alt: "Intech Studio Logo",
       },
     ],
   },
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Intech Studio | Premium Custom Software Development",
     description:
       "World-class software house specializing in custom software development, business automation, POS systems, and WhatsApp commerce.",
-    images: ["https://intechstudio.com/og-image.jpg"],
+    images: ["https://intechstudio.id/logo.png"],
   },
 };
 

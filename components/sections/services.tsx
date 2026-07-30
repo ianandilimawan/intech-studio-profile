@@ -62,14 +62,14 @@ export function Services() {
   };
 
   return (
-    <section id="services" className="py-32 relative bg-[#050505]">
+    <section id="services" className="py-10 md:py-32 relative bg-[#050505]">
       <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.02] mix-blend-overlay pointer-events-none" />
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-20 gap-8">
           <div className="max-w-2xl">
             <Badge className="mb-6 bg-white/5 border-white/10 backdrop-blur-md">Our Expertise</Badge>
-            <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-white leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
               Everything you need to <br />
               <span className="text-white/40">scale your business.</span>
             </h2>

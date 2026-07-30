@@ -23,11 +23,11 @@ export function Process() {
   const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section id="process" ref={ref} className="py-32 relative bg-card/20">
+    <section id="process" ref={ref} className="py-10 md:py-32 relative bg-[#020202]">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-24">
+        <div className="text-center mb-12 md:mb-24">
           <Badge className="mb-4">Development Process</Badge>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
             How we build <span className="text-white/50">great products.</span>
           </h2>
         </div>
@@ -62,9 +62,9 @@ export function Process() {
                 <div className={`w-full md:w-[45%] pl-20 md:pl-0 ${
                   idx % 2 === 0 ? "md:text-left" : "md:text-right"
                 }`}>
-                  <div className="p-6 rounded-2xl border border-white/5 bg-white/5 backdrop-blur-sm hover:border-white/10 hover:bg-white/10 transition-colors">
-                    <h3 className="text-2xl font-bold text-white mb-3">{step.title}</h3>
-                    <p className="text-white/60 leading-relaxed">{step.desc}</p>
+                  <div className="p-5 md:p-6 rounded-2xl border border-white/5 bg-white/5 backdrop-blur-sm hover:border-white/10 hover:bg-white/10 transition-colors">
+                    <h3 className="text-xl md:text-2xl font-bold text-white mb-2 md:mb-3">{step.title}</h3>
+                    <p className="text-sm md:text-base text-white/60 leading-relaxed">{step.desc}</p>
                   </div>
                 </div>
               </motion.div>

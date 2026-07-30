@@ -12,7 +12,7 @@ export function About() {
   const icons = [Code2, BrainCircuit, Cpu, Globe2, Sparkles];
 
   return (
-    <section id="about" className="py-32 relative bg-background overflow-hidden">
+    <section id="about" className="py-10 md:py-32 relative bg-[#050505] overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center mb-24">
           <Badge className="mb-6 border-white/10 bg-white/5 backdrop-blur-md">{t("about.badge")}</Badge>
@@ -21,7 +21,7 @@ export function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-8"
+            className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight text-white mb-8"
           >
             {t("about.title")} <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Intech Studio</span>.
           </motion.h2>
@@ -51,12 +51,12 @@ export function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: idx * 0.1 }}
-                className="bg-white/[0.02] border border-white/5 rounded-3xl p-8 hover:bg-white/[0.04] transition-colors relative overflow-hidden group"
+                className="bg-white/[0.02] border border-white/5 rounded-[1.5rem] p-6 md:p-8 hover:bg-white/[0.04] transition-colors relative overflow-hidden group"
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                <Icon className="w-10 h-10 text-primary mb-6 opacity-80" />
-                <h3 className="text-xl font-semibold text-white mb-3">{t(`about.principles.${key}.title`)}</h3>
-                <p className="text-white/50 leading-relaxed font-light">{t(`about.principles.${key}.desc`)}</p>
+                <Icon className="w-8 h-8 md:w-10 md:h-10 text-primary mb-4 md:mb-6 opacity-80" />
+                <h3 className="text-lg md:text-xl font-semibold text-white mb-2 md:mb-3">{t(`about.principles.${key}.title`)}</h3>
+                <p className="text-sm md:text-base text-white/50 leading-relaxed font-light">{t(`about.principles.${key}.desc`)}</p>
               </motion.div>
             );
           })}

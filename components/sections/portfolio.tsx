@@ -46,16 +46,16 @@ const projects = [
 
 export function Portfolio() {
   return (
-    <section id="portfolio" className="py-32 relative bg-[#050505]">
+    <section id="portfolio" className="py-10 md:py-32 relative bg-[#050505]">
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
 
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-20 gap-8">
           <div className="max-w-2xl">
             <Badge className="mb-6 bg-white/5 border-white/10 backdrop-blur-md">
               Selected Works
             </Badge>
-            <h2 className="text-5xl md:text-7xl font-bold tracking-tighter text-white leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-white leading-tight">
               Featured <br />
               <span className="text-white/40">projects.</span>
             </h2>

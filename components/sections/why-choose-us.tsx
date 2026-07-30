@@ -18,12 +18,12 @@ export function WhyChooseUs() {
   const [active, setActive] = useState(reasons[0].id);
 
   return (
-    <section className="py-32 relative bg-[#020202]">
+    <section className="py-10 md:py-32 relative bg-[#020202]">
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col md:flex-row gap-12 items-end mb-20">
+        <div className="flex flex-col md:flex-row gap-12 items-start md:items-end mb-12 md:mb-20">
           <div className="max-w-2xl">
             <Badge className="mb-6 bg-white/5 border-white/10 backdrop-blur-md">Why Choose Us</Badge>
-            <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-white leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
               Engineered for <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent">Excellence</span>
             </h2>
@@ -35,7 +35,7 @@ export function WhyChooseUs() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 h-auto lg:h-[600px]">
+        <div className="flex flex-col-reverse lg:flex-row gap-8 lg:gap-12 h-auto lg:h-[600px]">
           {/* Interactive List - Left Sidebar */}
           <div className="w-full lg:w-5/12 flex flex-col gap-3">
             {reasons.map((reason) => {
@@ -75,7 +75,7 @@ export function WhyChooseUs() {
           </div>
 
           {/* Dynamic Content Panel - Right Side */}
-          <div className="w-full lg:w-7/12 h-[500px] lg:h-full relative perspective-1000">
+          <div className="w-full lg:w-7/12 h-[320px] sm:h-[350px] lg:h-full relative perspective-1000 sticky top-24 z-20">
             <div className="absolute inset-0 rounded-[2.5rem] border border-white/10 bg-[#0a0a0a] shadow-2xl overflow-hidden">
               {/* Subtle grid background */}
               <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.02] mix-blend-overlay" />
@@ -90,7 +90,7 @@ export function WhyChooseUs() {
                       animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                       exit={{ opacity: 0, y: -20, filter: "blur(8px)", position: "absolute" }}
                       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                      className="absolute inset-0 p-12 lg:p-16 flex flex-col items-start justify-center"
+                      className="absolute inset-0 p-6 md:p-12 lg:p-16 flex flex-col items-start justify-center"
                     >
                        {/* Animated Glowing Background Orb */}
                        <div className={`absolute top-0 right-0 w-[500px] h-[500px] rounded-full blur-[100px] opacity-20 pointer-events-none transform translate-x-1/3 -translate-y-1/3 ${reason.bg}`} />
@@ -99,18 +99,18 @@ export function WhyChooseUs() {
                          initial={{ scale: 0.8, opacity: 0 }}
                          animate={{ scale: 1, opacity: 1 }}
                          transition={{ delay: 0.2, type: "spring" }}
-                         className={`w-20 h-20 mb-8 rounded-2xl ${reason.bg} ${reason.border} border flex items-center justify-center backdrop-blur-xl ${reason.color} relative`}
+                         className={`w-14 h-14 md:w-20 md:h-20 mb-6 md:mb-8 rounded-2xl ${reason.bg} ${reason.border} border flex items-center justify-center backdrop-blur-xl ${reason.color} relative`}
                        >
-                         <reason.icon className="w-10 h-10 relative z-10" />
+                         <reason.icon className="w-7 h-7 md:w-10 md:h-10 relative z-10" />
                          {/* Pulse effect */}
                          <div className={`absolute inset-0 rounded-2xl ${reason.bg} animate-ping opacity-20`} style={{ animationDuration: '3s' }} />
                        </motion.div>
                        
-                       <h3 className="text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight">
+                       <h3 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white mb-3 sm:mb-6 tracking-tight">
                          {reason.title}
                        </h3>
                        
-                       <p className="text-xl text-white/60 leading-relaxed max-w-md font-light">
+                       <p className="text-sm md:text-xl text-white/60 leading-relaxed max-w-md font-light">
                          {reason.desc}
                        </p>
                     </motion.div>

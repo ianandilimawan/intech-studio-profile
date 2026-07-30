@@ -11,11 +11,11 @@ const technologies = [
 
 export function TechStack() {
   return (
-    <section className="py-32 relative overflow-hidden bg-[#020202]">
+    <section className="py-10 md:py-32 relative overflow-hidden bg-[#020202]">
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-16 flex flex-col items-center">
+        <div className="text-center mb-12 md:mb-16 flex flex-col items-center">
           <Badge className="mb-6 bg-white/5 border-white/10 backdrop-blur-md">Tech Stack</Badge>
-          <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-white mb-6 leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 leading-tight">
             Powered by modern <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-emerald-400 to-primary">Technologies</span>
           </h2>

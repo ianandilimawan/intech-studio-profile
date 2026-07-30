@@ -17,11 +17,11 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-32 relative">
+    <section className="py-10 md:py-32 relative bg-[#050505]">
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="text-center mb-16">
           <Badge className="mb-4">FAQ</Badge>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
             Common <span className="text-white/50">Questions</span>
           </h2>
         </div>

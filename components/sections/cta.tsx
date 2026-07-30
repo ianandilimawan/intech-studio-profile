@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function CTA() {
   return (
-    <section id="contact" className="py-32 relative overflow-hidden bg-[#020202]">
+    <section id="contact" className="py-10 md:py-32 relative overflow-hidden bg-[#020202]">
       <div className="absolute inset-0 bg-primary/5" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-[400px] bg-primary/20 blur-[120px] rounded-full mix-blend-screen pointer-events-none" />
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:40px_40px]" />
@@ -23,7 +23,7 @@ export function CTA() {
           <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_top,rgba(37,99,235,0.4)_0%,transparent_70%)] group-hover/card:opacity-50 transition-opacity duration-700" />
           
           <div className="relative z-10">
-            <h2 className="text-5xl md:text-7xl font-bold tracking-tighter text-white mb-8 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-white mb-8 leading-tight">
               Let's Build Something <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-emerald-400 to-primary">Amazing Together.</span>
             </h2>

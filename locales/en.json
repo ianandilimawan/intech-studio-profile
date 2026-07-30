@@ -1,0 +1,47 @@
+{
+  "navbar": {
+    "about": "About",
+    "services": "Services",
+    "products": "Products",
+    "process": "Process",
+    "portfolio": "Portfolio",
+    "letsTalk": "Let's Talk"
+  },
+  "hero": {
+    "badge": "AI-Powered Software House",
+    "title1": "Engineering the",
+    "title2": "Future",
+    "title3": "of Business.",
+    "description": "We build high-end enterprise software, POS systems, and automated commerce platforms, supercharged by Artificial Intelligence to scale seamlessly.",
+    "ctaPrimary": "Start a Project",
+    "ctaSecondary": "View Portfolio"
+  },
+  "about": {
+    "badge": "Who We Are",
+    "title": "We are ",
+    "description1": "More than just a software house, we are a digital product agency that partners with ambitious businesses to build the technology of tomorrow.",
+    "description2": "Whether it's a massive multi-tenant ERP system, a cutting-edge restaurant POS, or a headless WhatsApp commerce platform, we engineer solutions that drive real business growth.",
+    "principles": {
+      "engineering": {
+        "title": "Engineering Excellence",
+        "desc": "We don't just write code; we architect scalable, secure, and maintainable systems built for the long term."
+      },
+      "ai": {
+        "title": "AI-Driven Solutions",
+        "desc": "We integrate cutting-edge machine learning and AI algorithms to automate complex workflows and unlock unprecedented business value."
+      },
+      "automation": {
+        "title": "Business Automation",
+        "desc": "Transforming manual bottlenecks into streamlined, automated workflows that save time and reduce costs."
+      },
+      "ecosystems": {
+        "title": "Digital Ecosystems",
+        "desc": "From POS terminals to WhatsApp commerce, we build interconnected platforms that communicate flawlessly."
+      },
+      "ux": {
+        "title": "Premium UX/UI",
+        "desc": "Every product we build is designed with an obsessive focus on user experience and visual perfection."
+      }
+    }
+  }
+}

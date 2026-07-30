@@ -1,0 +1,47 @@
+{
+  "navbar": {
+    "about": "Tentang",
+    "services": "Layanan",
+    "products": "Produk",
+    "process": "Proses",
+    "portfolio": "Portofolio",
+    "letsTalk": "Mari Berdiskusi"
+  },
+  "hero": {
+    "badge": "Software House Berbasis AI",
+    "title1": "Merancang",
+    "title2": "Masa Depan",
+    "title3": "Bisnis Anda.",
+    "description": "Kami membangun perangkat lunak *enterprise* kelas atas, sistem POS, dan platform *commerce* otomatis, diperkuat oleh Kecerdasan Buatan (AI) agar dapat berkembang tanpa batas.",
+    "ctaPrimary": "Mulai Proyek",
+    "ctaSecondary": "Lihat Portofolio"
+  },
+  "about": {
+    "badge": "Siapa Kami",
+    "title": "Kami adalah ",
+    "description1": "Lebih dari sekadar *software house*, kami adalah agensi produk digital yang bermitra dengan bisnis ambisius untuk membangun teknologi masa depan.",
+    "description2": "Baik itu sistem ERP *multi-tenant* berskala besar, POS restoran mutakhir, maupun platform *commerce* WhatsApp *headless*, kami merancang solusi yang mendorong pertumbuhan bisnis nyata.",
+    "principles": {
+      "engineering": {
+        "title": "Keunggulan Rekayasa",
+        "desc": "Kami tidak sekadar menulis kode; kami merancang arsitektur sistem yang skalabel, aman, dan mudah dipelihara untuk jangka panjang."
+      },
+      "ai": {
+        "title": "Solusi Berbasis AI",
+        "desc": "Kami mengintegrasikan pembelajaran mesin dan algoritma AI mutakhir untuk mengotomatisasi alur kerja kompleks dan membuka nilai bisnis yang belum pernah ada sebelumnya."
+      },
+      "automation": {
+        "title": "Otomatisasi Bisnis",
+        "desc": "Mengubah hambatan manual menjadi alur kerja yang efisien dan otomatis untuk menghemat waktu dan menekan biaya."
+      },
+      "ecosystems": {
+        "title": "Ekosistem Digital",
+        "desc": "Dari terminal POS hingga WhatsApp commerce, kami membangun platform saling terhubung yang berkomunikasi dengan sempurna."
+      },
+      "ux": {
+        "title": "UX/UI Premium",
+        "desc": "Setiap produk yang kami buat dirancang dengan fokus obsesif pada pengalaman pengguna dan kesempurnaan visual."
+      }
+    }
+  }
+}

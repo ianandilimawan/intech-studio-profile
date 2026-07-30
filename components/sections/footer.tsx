@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -31,24 +32,24 @@ export function Footer() {
             <h4 className="font-semibold text-white mb-4">Services</h4>
             <ul className="space-y-2 text-sm text-white/60">
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <Link href="#" className="hover:text-primary transition-colors">
                   Custom Software
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <Link href="#" className="hover:text-primary transition-colors">
                   POS Systems
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <Link href="#" className="hover:text-primary transition-colors">
                   WhatsApp Commerce
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <Link href="#" className="hover:text-primary transition-colors">
                   UI/UX Design
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -57,16 +58,16 @@ export function Footer() {
             <h4 className="font-semibold text-white mb-4">Products</h4>
             <ul className="space-y-2 text-sm text-white/60">
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <Link href="#" className="hover:text-primary transition-colors">
                   Katalogin
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <Link href="#" className="hover:text-primary transition-colors">
                   InPOS
-                </a>
+                </Link>
               </li>
-              {/* <li><a href="#" className="hover:text-primary transition-colors">Enterprise Boilerplate</a></li> */}
+              {/* <li><Link href="#" className="hover:text-primary transition-colors">Enterprise Boilerplate</Link></li> */}
             </ul>
           </div>
 
@@ -74,29 +75,29 @@ export function Footer() {
             <h4 className="font-semibold text-white mb-4">Company</h4>
             <ul className="space-y-2 text-sm text-white/60">
               <li>
-                <a
+                <Link
                   href="/#about"
                   className="hover:text-primary transition-colors"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
-              {/* <li><a href="#" className="hover:text-primary transition-colors">Careers</a></li> */}
+              {/* <li><Link href="#" className="hover:text-primary transition-colors">Careers</Link></li> */}
               <li>
-                <a
-                  href="/#contact"
+                <Link
+                  href="mailto:intechstudio8@gmail.com"
                   className="hover:text-primary transition-colors"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/privacy-policy"
                   className="hover:text-primary transition-colors"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -105,10 +106,10 @@ export function Footer() {
         {/* <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-white/40">
           <p>© {new Date().getFullYear()} Intech Studio. All rights reserved.</p>
           <div className="flex gap-4 mt-4 md:mt-0">
-            <a href="#" className="hover:text-white transition-colors">Twitter</a>
-            <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
-            <a href="#" className="hover:text-white transition-colors">GitHub</a>
-            <a href="#" className="hover:text-white transition-colors">Dribbble</a>
+            <Link href="#" className="hover:text-white transition-colors">Twitter</Link>
+            <Link href="#" className="hover:text-white transition-colors">LinkedIn</Link>
+            <Link href="#" className="hover:text-white transition-colors">GitHub</Link>
+            <Link href="#" className="hover:text-white transition-colors">Dribbble</Link>
           </div>
         </div> */}
       </div>

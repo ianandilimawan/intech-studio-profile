@@ -4,6 +4,7 @@ import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import { useLanguage } from "@/lib/i18n";
 
 export function Navbar() {
@@ -39,14 +40,14 @@ export function Navbar() {
 
         <nav className="hidden md:flex items-center gap-8">
           {["about", "services", "products", "process", "portfolio"].map((item) => (
-            <a
+            <Link
               key={item}
               href={`/#${item}`}
               className="text-sm font-medium text-white/60 hover:text-white transition-colors relative group"
             >
               {t(`navbar.${item}`)}
               <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 rounded-full" />
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -60,12 +61,12 @@ export function Navbar() {
             <span className={locale === 'id' ? 'text-primary' : 'text-white/40'}>ID</span>
           </button>
           
-          <a href="/#contact" className="hidden md:block group/btn relative">
+          <Link href="/#contact" className="hidden md:block group/btn relative">
              <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-full blur opacity-30 group-hover/btn:opacity-70 transition duration-500"></div>
             <Button className="relative bg-[#0a0a0a] border-white/10 hover:bg-[#111] hover:text-white text-white/90 rounded-full px-6 font-medium tracking-wide">
               {t("navbar.letsTalk")}
             </Button>
-          </a>
+          </Link>
         </div>
       </div>
     </motion.header>

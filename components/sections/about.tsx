@@ -5,34 +5,6 @@ import { Code2, Cpu, Globe2, Sparkles, BrainCircuit } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useLanguage } from "@/lib/i18n";
 
-const principles = [
-  {
-    icon: Code2,
-    title: "Engineering Excellence",
-    desc: "We don't just write code; we architect scalable, secure, and maintainable systems built for the long term."
-  },
-  {
-    icon: BrainCircuit,
-    title: "AI-Driven Solutions",
-    desc: "We integrate cutting-edge machine learning and AI algorithms to automate complex workflows and unlock unprecedented business value."
-  },
-  {
-    icon: Cpu,
-    title: "Business Automation",
-    desc: "Transforming manual bottlenecks into streamlined, automated workflows that save time and reduce costs."
-  },
-  {
-    icon: Globe2,
-    title: "Digital Ecosystems",
-    desc: "From POS terminals to WhatsApp commerce, we build interconnected platforms that communicate flawlessly."
-  },
-  {
-    icon: Sparkles,
-    title: "Premium UX/UI",
-    desc: "Every product we build is designed with an obsessive focus on user experience and visual perfection."
-  }
-];
-
 export function About() {
   const { t } = useLanguage();
 

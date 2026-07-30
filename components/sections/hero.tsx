@@ -2,10 +2,9 @@
 
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { useLanguage } from "@/lib/i18n";
+import Link from "next/link";
 
 export function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -110,12 +109,16 @@ export function Hero() {
             transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full sm:w-auto"
           >
-            <Button size="lg" className="rounded-full bg-white text-black hover:bg-white/90 font-medium px-8 h-12 shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all">
-              {t("hero.ctaPrimary")}
-            </Button>
-            <Button size="lg" variant="outline" className="rounded-full border-white/20 hover:bg-white/10 font-medium px-8 h-12 text-white hover:text-white">
-              {t("hero.ctaSecondary")}
-            </Button>
+            <Link href="mailto:intechstudio8@gmail.com">
+              <Button size="lg" className="rounded-full bg-white text-black hover:bg-white/90 font-medium px-8 h-12 shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all">
+                {t("hero.ctaPrimary")}
+              </Button>
+            </Link>
+            <Link href="/#portfolio">
+              <Button size="lg" variant="outline" className="rounded-full border-white/20 hover:bg-white/10 font-medium px-8 h-12 text-white hover:text-white">
+                {t("hero.ctaSecondary")}
+              </Button>
+            </Link>
           </motion.div>
         </div>
 

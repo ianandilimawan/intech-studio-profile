@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { cn } from "@/lib/utils";
-import { motion, HTMLMotionProps, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { motion, HTMLMotionProps } from "framer-motion";
 
 export interface ButtonProps extends HTMLMotionProps<"button"> {
   variant?: "primary" | "secondary" | "outline" | "ghost";
@@ -11,25 +11,6 @@ export interface ButtonProps extends HTMLMotionProps<"button"> {
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = "primary", size = "md", children, ...props }, ref) => {
-    const x = useMotionValue(0);
-    const y = useMotionValue(0);
-
-    const mouseX = useSpring(x, { stiffness: 150, damping: 15, mass: 0.1 });
-    const mouseY = useSpring(y, { stiffness: 150, damping: 15, mass: 0.1 });
-
-    function handlePointerMove(e: React.PointerEvent<HTMLButtonElement>) {
-      const rect = e.currentTarget.getBoundingClientRect();
-      const halfWidth = rect.width / 2;
-      const halfHeight = rect.height / 2;
-      x.set(e.clientX - rect.left - halfWidth);
-      y.set(e.clientY - rect.top - halfHeight);
-    }
-
-    function handlePointerLeave() {
-      x.set(0);
-      y.set(0);
-    }
-
     return (
       <motion.button
         ref={ref}

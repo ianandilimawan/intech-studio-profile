@@ -4,8 +4,7 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 import en from "../locales/en.json";
 import id from "../locales/id.json";
 
-type Locale = "en" | "id";
-type Translations = typeof en;
+export type Locale = "en" | "id";
 
 interface LanguageContextType {
   locale: Locale;
@@ -23,6 +22,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const savedLocale = localStorage.getItem("locale") as Locale;
     if (savedLocale && (savedLocale === "en" || savedLocale === "id")) {
+      // eslint-disable-next-line react-hooks/rules-of-hooks, react-hooks/exhaustive-deps
       setLocale(savedLocale);
     }
   }, []);

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function CTA() {
   return (
@@ -31,15 +32,12 @@ export function CTA() {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <div className="relative group/btn w-full sm:w-auto">
+              <Link href="mailto:intechstudio8@gmail.com" className="relative group/btn w-full sm:w-auto block">
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-primary rounded-full blur opacity-40 group-hover/btn:opacity-100 transition duration-500 animate-pulse"></div>
-                <Button size="lg" className="relative w-full sm:w-auto h-16 px-10 text-lg rounded-full bg-white text-black hover:bg-white/90 font-semibold shadow-xl">
+                <Button size="lg" className="relative w-full h-16 px-10 text-lg rounded-full bg-white text-black hover:bg-white/90 font-semibold shadow-xl">
                   Book Consultation
                 </Button>
-              </div>
-              <Button size="lg" variant="outline" className="w-full sm:w-auto h-16 px-10 text-lg rounded-full border-white/20 hover:bg-white/5 hover:text-white text-white/80 backdrop-blur-md">
-                Start Your Project
-              </Button>
+              </Link>
             </div>
           </div>
         </motion.div>

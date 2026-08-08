@@ -85,7 +85,7 @@ export function Footer() {
               {/* <li><Link href="#" className="hover:text-primary transition-colors">Careers</Link></li> */}
               <li>
                 <Link
-                  href="mailto:intechstudio8@gmail.com"
+                  href="mailto:hi.intechstudio@gmail.com"
                   className="hover:text-primary transition-colors"
                 >
                   Contact

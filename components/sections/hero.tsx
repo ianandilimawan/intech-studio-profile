@@ -109,7 +109,7 @@ export function Hero() {
             transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 w-full sm:w-auto px-4 md:px-0"
           >
-            <Link href="mailto:intechstudio8@gmail.com" className="w-full sm:w-auto">
+            <Link href="mailto:hi.intechstudio@gmail.com" className="w-full sm:w-auto">
               <Button size="lg" className="w-full sm:w-auto rounded-full bg-white text-black hover:bg-white/90 font-semibold px-8 h-12 md:h-14 shadow-[0_0_30px_rgba(255,255,255,0.4)] transition-all text-base">
                 {t("hero.ctaPrimary")}
               </Button>

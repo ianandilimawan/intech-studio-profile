@@ -66,7 +66,7 @@ export function Navbar() {
             <span className={locale === 'id' ? 'text-primary' : 'text-white/40'}>ID</span>
           </button>
           
-          <Link href="mailto:intechstudio8@gmail.com" className="group/btn relative">
+          <Link href="mailto:hi.intechstudio@gmail.com" className="group/btn relative">
              <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-full blur opacity-30 group-hover/btn:opacity-70 transition duration-500"></div>
             <Button className="relative bg-[#0a0a0a] border-white/10 hover:bg-[#111] hover:text-white text-white/90 rounded-full px-6 font-medium tracking-wide">
               {t("navbar.letsTalk")}
@@ -117,7 +117,7 @@ export function Navbar() {
                 ))}
               </nav>
               
-              <Link href="mailto:intechstudio8@gmail.com" onClick={() => setIsMobileMenuOpen(false)} className="mt-4 w-full">
+              <Link href="mailto:hi.intechstudio@gmail.com" onClick={() => setIsMobileMenuOpen(false)} className="mt-4 w-full">
                 <Button className="w-full bg-gradient-to-r from-primary to-secondary text-white rounded-xl py-6 text-lg shadow-[0_0_20px_rgba(37,99,235,0.3)]">
                   {t("navbar.letsTalk")}
                 </Button>

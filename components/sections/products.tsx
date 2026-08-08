@@ -50,7 +50,7 @@ const products = [
     image: "/projects/inpos/mockup-pos-dark.png",
     imageAlt: "InPOS Terminal",
     floatingImage: "/projects/inpos/mockup-pos-list-dark.png",
-    link: "mailto:intechstudio8@gmail.com"
+    link: "mailto:hi.intechstudio@gmail.com"
   }
 ];
 

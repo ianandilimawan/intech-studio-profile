@@ -32,7 +32,7 @@ export function CTA() {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <Link href="mailto:intechstudio8@gmail.com" className="relative group/btn w-full sm:w-auto block">
+              <Link href="mailto:hi.intechstudio@gmail.com" className="relative group/btn w-full sm:w-auto block">
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-primary rounded-full blur opacity-40 group-hover/btn:opacity-100 transition duration-500 animate-pulse"></div>
                 <Button size="lg" className="relative w-full h-16 px-10 text-lg rounded-full bg-white text-black hover:bg-white/90 font-semibold shadow-xl">
                   Book Consultation

@@ -50,6 +50,9 @@ export const metadata: Metadata = {
       "World-class software house specializing in custom software development, business automation, POS systems, and WhatsApp commerce.",
     images: ["https://intechstudio.id/logo.png"],
   },
+  verification: {
+    google: "Ep76eyut2Sy5HxzT2DQFG_WKpRMMR3pSpUhSVmexUF8",
+  },
 };
 
 export default function RootLayout({

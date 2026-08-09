@@ -43,5 +43,253 @@
         "desc": "Every product we build is designed with an obsessive focus on user experience and visual perfection."
       }
     }
+  },
+  "services": {
+    "badge": "Our Expertise",
+    "title1": "Everything you need to",
+    "title2": "scale your business.",
+    "subtitle": "We don't just write code. We architect solutions that give you an unfair advantage.",
+    "items": {
+      "custom": {
+        "title": "Custom Software",
+        "desc": "Enterprise-grade scalable systems built with modern architecture and clean code for high-performance operations."
+      },
+      "pos": {
+        "title": "POS Systems",
+        "desc": "Complete Point of Sale ecosystems with advanced QR ordering."
+      },
+      "whatsapp": {
+        "title": "WhatsApp Commerce",
+        "desc": "Automated ordering and checkout directly within WhatsApp."
+      },
+      "mobile": {
+        "title": "Mobile Apps",
+        "desc": "Native and cross-platform mobile experiences."
+      },
+      "cloud": {
+        "title": "Cloud & API",
+        "desc": "Robust backend services and seamless third-party integrations."
+      }
+    }
+  },
+  "products": {
+    "badge": "Featured Products",
+    "title1": "Enterprise solutions,",
+    "title2": "ready to deploy.",
+    "subtitle": "We don't just build custom software. We've developed battle-tested SaaS products that power thousands of daily transactions.",
+    "explore": "Explore",
+    "items": {
+      "katalogin": {
+        "desc": "A headless SaaS platform enabling businesses to build digital catalogs with direct WhatsApp checkout. No app download required.",
+        "features": [
+          {
+            "title": "Smart Cart",
+            "desc": "Frictionless ordering"
+          },
+          {
+            "title": "WhatsApp Sync",
+            "desc": "Automated chat flows"
+          },
+          {
+            "title": "Analytics",
+            "desc": "Real-time sales tracking"
+          },
+          {
+            "title": "Multi-Tenant",
+            "desc": "Manage multiple branches"
+          }
+        ]
+      },
+      "inpos": {
+        "desc": "An intelligent Point of Sale system bridging front-of-house ordering with back-of-house kitchen automation.",
+        "features": [
+          {
+            "title": "POS Terminal",
+            "desc": "Lightning fast checkout"
+          },
+          {
+            "title": "QR Ordering",
+            "desc": "Table-side self service"
+          },
+          {
+            "title": "Kitchen Display",
+            "desc": "Digital ticket routing"
+          },
+          {
+            "title": "Smart Billing",
+            "desc": "Split payments & promos"
+          }
+        ]
+      }
+    }
+  },
+  "whyChooseUs": {
+    "badge": "Why Choose Us",
+    "title1": "Engineered for ",
+    "title2": "Excellence",
+    "description": "Partnering with us means gaining a dedicated technical team that cares about your success.",
+    "reasons": {
+      "fastDev": {
+        "title": "Fast Development",
+        "desc": "Rapid prototyping and agile methodology ensure quick time-to-market without sacrificing quality. We deploy in weeks, not months."
+      },
+      "security": {
+        "title": "Security First",
+        "desc": "Enterprise-grade security protocols built into the core of every application. Your data is encrypted, backed up, and protected."
+      },
+      "uiux": {
+        "title": "Modern UI/UX",
+        "desc": "Award-winning designs that captivate users and drive engagement. We don't just make it work, we make it unforgettable."
+      },
+      "cleanCode": {
+        "title": "Clean Code",
+        "desc": "Maintainable, scalable, and fully documented codebases adhering to strict industry best practices."
+      },
+      "support": {
+        "title": "Long-term Support",
+        "desc": "Dedicated maintenance and support to ensure your product grows seamlessly with your business operations."
+      },
+      "business": {
+        "title": "Business Focused",
+        "desc": "Solutions engineered specifically to solve real business problems, increase efficiency, and maximize your ROI."
+      }
+    }
+  },
+  "process": {
+    "badge": "Development Process",
+    "title1": "How we build ",
+    "title2": "great products.",
+    "steps": {
+      "discovery": {
+        "title": "Discovery",
+        "desc": "Understanding your business goals, target audience, and technical requirements."
+      },
+      "wireframe": {
+        "title": "Wireframe & UI Design",
+        "desc": "Crafting intuitive user experiences and premium visual interfaces."
+      },
+      "development": {
+        "title": "Development",
+        "desc": "Agile engineering using modern tech stacks for scalability and performance."
+      },
+      "testing": {
+        "title": "Testing & QA",
+        "desc": "Rigorous testing to ensure security, stability, and pixel-perfect implementation."
+      },
+      "deployment": {
+        "title": "Deployment",
+        "desc": "Seamless launch to cloud infrastructure with zero downtime."
+      },
+      "support": {
+        "title": "Support",
+        "desc": "Continuous monitoring, updates, and optimization to drive growth."
+      }
+    }
+  },
+  "techStack": {
+    "badge": "Tech Stack",
+    "title1": "Powered by modern ",
+    "title2": "Technologies",
+    "description": "We utilize industry-leading frameworks and robust infrastructure to ensure your products are secure, scalable, and fast."
+  },
+  "portfolio": {
+    "badge": "Selected Works",
+    "title1": "Featured ",
+    "title2": "projects.",
+    "viewAll": "View All Projects",
+    "viewCaseStudy": "View Case Study",
+    "projects": {
+      "katalogin": {
+        "title": "Katalogin ERP",
+        "category": "Web Application",
+        "desc": "A massive multi-tenant ERP system handling thousands of daily B2B transactions."
+      },
+      "inpos": {
+        "title": "InPOS Terminal",
+        "category": "Fintech & POS",
+        "desc": "Real-time analytics and POS system dashboard with complete restaurant management."
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title1": "Don't just take ",
+    "title2": "our word for it.",
+    "items": {
+      "sarah": {
+        "name": "Sarah Jenkins",
+        "role": "CEO at TechFlow",
+        "text": "Intech Studio completely transformed our legacy systems into a modern, lightning-fast architecture."
+      },
+      "david": {
+        "name": "David Chen",
+        "role": "Founder of RetailX",
+        "text": "The POS system they built for us reduced our checkout times by 40%. Absolutely game-changing."
+      },
+      "elena": {
+        "name": "Elena Rodriguez",
+        "role": "Operations, Foodies",
+        "text": "Their WhatsApp commerce integration helped us capture a totally new demographic of customers."
+      },
+      "michael": {
+        "name": "Michael Chang",
+        "role": "CTO at FinSecure",
+        "text": "The level of code quality and security they deliver is unmatched. A true premium agency."
+      }
+    }
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title1": "Common ",
+    "title2": "Questions",
+    "items": {
+      "timeline": {
+        "q": "What is your typical project timeline?",
+        "a": "Depending on the complexity, our projects usually range from 2 to 6 months. We work in 2-week agile sprints to ensure continuous delivery and feedback."
+      },
+      "support": {
+        "q": "Do you provide post-launch support?",
+        "a": "Yes. We offer comprehensive SLA-based maintenance and support packages to ensure your application remains secure, up-to-date, and fully optimized."
+      },
+      "tech": {
+        "q": "What technologies do you specialize in?",
+        "a": "We build primarily with Next.js, React, Node.js, Laravel, and Go. For mobile, we use React Native or Flutter. We deploy on AWS or Google Cloud."
+      },
+      "legacy": {
+        "q": "Can you integrate with our existing legacy systems?",
+        "a": "Absolutely. We have extensive experience building middleware and secure APIs to connect modern interfaces with legacy enterprise systems."
+      },
+      "pricing": {
+        "q": "How do you handle project pricing?",
+        "a": "We offer both fixed-price contracts for well-defined scopes and time-and-materials for dynamic, evolving projects. Every engagement starts with a detailed discovery phase."
+      }
+    }
+  },
+  "cta": {
+    "title1": "Let's Build Something ",
+    "title2": "Amazing Together.",
+    "description": "Ready to elevate your digital presence? Partner with us to transform your ideas into world-class software solutions.",
+    "button": "Book Consultation"
+  },
+  "footer": {
+    "description": "World-class software house building enterprise-grade digital products for forward-thinking companies.",
+    "services": {
+      "title": "Services",
+      "custom": "Custom Software",
+      "pos": "POS Systems",
+      "whatsapp": "WhatsApp Commerce",
+      "uiux": "UI/UX Design"
+    },
+    "products": {
+      "title": "Products",
+      "katalogin": "Katalogin",
+      "inpos": "InPOS"
+    },
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "contact": "Contact",
+      "privacy": "Privacy Policy"
+    }
   }
 }

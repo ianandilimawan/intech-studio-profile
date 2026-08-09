@@ -3,7 +3,8 @@
 import { motion } from "framer-motion";
 import { Code2, Smartphone, Terminal, Database, MessageSquare, Cloud } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { useRef, useState } from "react";
+import { useRef, useState, useMemo } from "react";
+import { useLanguage } from "@/lib/i18n";
 
 const services = [
   {
@@ -61,6 +62,51 @@ export function Services() {
     });
   };
 
+  const { t } = useLanguage();
+
+  const services = useMemo(() => [
+    {
+      title: t("services.items.custom.title"),
+      description: t("services.items.custom.desc"),
+      icon: Code2,
+      colSpan: "md:col-span-2 md:row-span-2",
+      color: "from-blue-500 to-purple-500",
+      bgAccent: "bg-blue-500/10",
+    },
+    {
+      title: t("services.items.pos.title"),
+      description: t("services.items.pos.desc"),
+      icon: Terminal,
+      colSpan: "md:col-span-1 md:row-span-1",
+      color: "from-emerald-500 to-teal-500",
+      bgAccent: "bg-emerald-500/10",
+    },
+    {
+      title: t("services.items.whatsapp.title"),
+      description: t("services.items.whatsapp.desc"),
+      icon: MessageSquare,
+      colSpan: "md:col-span-1 md:row-span-1",
+      color: "from-green-500 to-emerald-500",
+      bgAccent: "bg-green-500/10",
+    },
+    {
+      title: t("services.items.mobile.title"),
+      description: t("services.items.mobile.desc"),
+      icon: Smartphone,
+      colSpan: "md:col-span-1 md:row-span-1",
+      color: "from-orange-500 to-red-500",
+      bgAccent: "bg-orange-500/10",
+    },
+    {
+      title: t("services.items.cloud.title"),
+      description: t("services.items.cloud.desc"),
+      icon: Cloud,
+      colSpan: "md:col-span-1 md:row-span-1",
+      color: "from-cyan-500 to-blue-500",
+      bgAccent: "bg-cyan-500/10",
+    },
+  ], [t]);
+
   return (
     <section id="services" className="py-32 relative bg-[#050505]">
       <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.02] mix-blend-overlay pointer-events-none" />
@@ -68,14 +114,14 @@ export function Services() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
           <div className="max-w-2xl">
-            <Badge className="mb-6 bg-white/5 border-white/10 backdrop-blur-md">Our Expertise</Badge>
+            <Badge className="mb-6 bg-white/5 border-white/10 backdrop-blur-md">{t("services.badge")}</Badge>
             <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-white leading-tight">
-              Everything you need to <br />
-              <span className="text-white/40">scale your business.</span>
+              {t("services.title1")} <br />
+              <span className="text-white/40">{t("services.title2")}</span>
             </h2>
           </div>
           <div className="text-white/50 max-w-sm text-lg font-light">
-            We don't just write code. We architect solutions that give you an unfair advantage.
+            {t("services.subtitle")}
           </div>
         </div>
 

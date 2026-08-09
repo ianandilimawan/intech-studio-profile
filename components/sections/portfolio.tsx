@@ -4,47 +4,33 @@ import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-
-const projects = [
-  {
-    id: 1,
-    title: "Katalogin ERP",
-    category: "Web Application",
-    desc: "A massive multi-tenant ERP system handling thousands of daily B2B transactions.",
-    color: "from-emerald-500/20 via-green-500/10 to-transparent",
-    accent: "bg-emerald-500",
-    image: "/projects/katalogin/mockup-admin.png",
-  },
-  {
-    id: 2,
-    title: "InPOS Terminal",
-    category: "Fintech & POS",
-    desc: "Real-time analytics and POS system dashboard with complete restaurant management.",
-    color: "from-blue-500/20 via-indigo-500/10 to-transparent",
-    accent: "bg-blue-500",
-    image: "/projects/inpos/mockup-pos-dark.png",
-  },
-  // {
-  //   id: 3,
-  //   title: "Aura Commerce",
-  //   category: "Mobile App",
-  //   desc: "A blazing fast cross-platform e-commerce application with AR try-on features.",
-  //   color: "from-orange-500/20 via-red-500/10 to-transparent",
-  //   accent: "bg-orange-500",
-  //   image: "/projects/inpos/mockup-menu.png"
-  // },
-  // {
-  //   id: 4,
-  //   title: "MedSync",
-  //   category: "Healthcare Portal",
-  //   desc: "HIPAA-compliant telemedicine platform connecting thousands of patients.",
-  //   color: "from-cyan-500/20 via-blue-500/10 to-transparent",
-  //   accent: "bg-cyan-500",
-  //   image: null
-  // },
-];
+import { useLanguage } from "@/lib/i18n";
+import { useMemo } from "react";
 
 export function Portfolio() {
+  const { t } = useLanguage();
+
+  const projects = useMemo(() => [
+    {
+      id: 1,
+      title: t("portfolio.projects.katalogin.title"),
+      category: t("portfolio.projects.katalogin.category"),
+      desc: t("portfolio.projects.katalogin.desc"),
+      color: "from-emerald-500/20 via-green-500/10 to-transparent",
+      accent: "bg-emerald-500",
+      image: "/projects/katalogin/mockup-admin.png",
+    },
+    {
+      id: 2,
+      title: t("portfolio.projects.inpos.title"),
+      category: t("portfolio.projects.inpos.category"),
+      desc: t("portfolio.projects.inpos.desc"),
+      color: "from-blue-500/20 via-indigo-500/10 to-transparent",
+      accent: "bg-blue-500",
+      image: "/projects/inpos/mockup-pos-dark.png",
+    }
+  ], [t]);
+
   return (
     <section id="portfolio" className="py-32 relative bg-[#050505]">
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
@@ -53,18 +39,18 @@ export function Portfolio() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
           <div className="max-w-2xl">
             <Badge className="mb-6 bg-white/5 border-white/10 backdrop-blur-md">
-              Selected Works
+              {t("portfolio.badge")}
             </Badge>
             <h2 className="text-5xl md:text-7xl font-bold tracking-tighter text-white leading-tight">
-              Featured <br />
-              <span className="text-white/40">projects.</span>
+              {t("portfolio.title1")} <br />
+              <span className="text-white/40">{t("portfolio.title2")}</span>
             </h2>
           </div>
           <a
             href="#"
             className="group hidden md:inline-flex items-center gap-2 text-white hover:text-primary transition-colors font-medium pb-2 border-b border-white/10 hover:border-primary"
           >
-            View All Projects
+            {t("portfolio.viewAll")}
             <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
@@ -128,7 +114,7 @@ export function Portfolio() {
                 {/* Hover Overlay Button */}
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center z-20 backdrop-blur-[2px]">
                   <div className="px-6 py-3 rounded-full bg-white text-black font-semibold transform translate-y-8 group-hover:translate-y-0 transition-all duration-500 shadow-xl flex items-center gap-2">
-                    View Case Study <ArrowRight className="w-4 h-4" />
+                    {t("portfolio.viewCaseStudy")} <ArrowRight className="w-4 h-4" />
                   </div>
                 </div>
               </div>
@@ -158,7 +144,7 @@ export function Portfolio() {
             href="#"
             className="inline-flex items-center gap-2 text-white hover:text-primary transition-colors font-medium border border-white/10 rounded-full px-6 py-3 bg-white/5"
           >
-            View All Projects <ArrowRight className="w-4 h-4" />
+            {t("portfolio.viewAll")} <ArrowRight className="w-4 h-4" />
           </a>
         </div>
       </div>

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
+import { useLanguage } from "@/lib/i18n";
 
 const technologies = [
   "Laravel", "Next.js", "React", "TypeScript", 
@@ -10,17 +11,19 @@ const technologies = [
 ];
 
 export function TechStack() {
+  const { t } = useLanguage();
+
   return (
     <section className="py-32 relative overflow-hidden bg-[#020202]">
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 flex flex-col items-center">
-          <Badge className="mb-6 bg-white/5 border-white/10 backdrop-blur-md">Tech Stack</Badge>
+          <Badge className="mb-6 bg-white/5 border-white/10 backdrop-blur-md">{t("techStack.badge")}</Badge>
           <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-white mb-6 leading-tight">
-            Powered by modern <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-emerald-400 to-primary">Technologies</span>
+            {t("techStack.title1")} <br className="hidden md:block" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-emerald-400 to-primary">{t("techStack.title2")}</span>
           </h2>
           <p className="text-white/50 text-lg max-w-2xl font-light">
-            We utilize industry-leading frameworks and robust infrastructure to ensure your products are secure, scalable, and fast.
+            {t("techStack.description")}
           </p>
         </div>
 

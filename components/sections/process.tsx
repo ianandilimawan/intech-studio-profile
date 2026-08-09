@@ -1,19 +1,22 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useMemo } from "react";
+import { useLanguage } from "@/lib/i18n";
 import { Badge } from "@/components/ui/badge";
 
-const steps = [
-  { id: "01", title: "Discovery", desc: "Understanding your business goals, target audience, and technical requirements." },
-  { id: "02", title: "Wireframe & UI Design", desc: "Crafting intuitive user experiences and premium visual interfaces." },
-  { id: "03", title: "Development", desc: "Agile engineering using modern tech stacks for scalability and performance." },
-  { id: "04", title: "Testing & QA", desc: "Rigorous testing to ensure security, stability, and pixel-perfect implementation." },
-  { id: "05", title: "Deployment", desc: "Seamless launch to cloud infrastructure with zero downtime." },
-  { id: "06", title: "Support", desc: "Continuous monitoring, updates, and optimization to drive growth." },
-];
-
 export function Process() {
+  const { t } = useLanguage();
+
+  const steps = useMemo(() => [
+    { id: "01", title: t("process.steps.discovery.title"), desc: t("process.steps.discovery.desc") },
+    { id: "02", title: t("process.steps.wireframe.title"), desc: t("process.steps.wireframe.desc") },
+    { id: "03", title: t("process.steps.development.title"), desc: t("process.steps.development.desc") },
+    { id: "04", title: t("process.steps.testing.title"), desc: t("process.steps.testing.desc") },
+    { id: "05", title: t("process.steps.deployment.title"), desc: t("process.steps.deployment.desc") },
+    { id: "06", title: t("process.steps.support.title"), desc: t("process.steps.support.desc") },
+  ], [t]);
+
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -26,9 +29,9 @@ export function Process() {
     <section id="process" ref={ref} className="py-32 relative bg-card/20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-24">
-          <Badge className="mb-4">Development Process</Badge>
+          <Badge className="mb-4">{t("process.badge")}</Badge>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
-            How we build <span className="text-white/50">great products.</span>
+            {t("process.title1")} <span className="text-white/50">{t("process.title2")}</span>
           </h2>
         </div>
 

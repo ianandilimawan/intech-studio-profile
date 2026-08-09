@@ -2,21 +2,25 @@
 
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
-
-const testimonials = [
-  { id: 1, name: "Sarah Jenkins", role: "CEO at TechFlow", text: "Intech Studio completely transformed our legacy systems into a modern, lightning-fast architecture." },
-  { id: 2, name: "David Chen", role: "Founder of RetailX", text: "The POS system they built for us reduced our checkout times by 40%. Absolutely game-changing." },
-  { id: 3, name: "Elena Rodriguez", role: "Operations, Foodies", text: "Their WhatsApp commerce integration helped us capture a totally new demographic of customers." },
-  { id: 4, name: "Michael Chang", role: "CTO at FinSecure", text: "The level of code quality and security they deliver is unmatched. A true premium agency." },
-];
+import { useLanguage } from "@/lib/i18n";
+import { useMemo } from "react";
 
 export function Testimonials() {
+  const { t } = useLanguage();
+
+  const testimonials = useMemo(() => [
+    { id: 1, name: t("testimonials.items.sarah.name"), role: t("testimonials.items.sarah.role"), text: t("testimonials.items.sarah.text") },
+    { id: 2, name: t("testimonials.items.david.name"), role: t("testimonials.items.david.role"), text: t("testimonials.items.david.text") },
+    { id: 3, name: t("testimonials.items.elena.name"), role: t("testimonials.items.elena.role"), text: t("testimonials.items.elena.text") },
+    { id: 4, name: t("testimonials.items.michael.name"), role: t("testimonials.items.michael.role"), text: t("testimonials.items.michael.text") },
+  ], [t]);
+
   return (
     <section className="py-32 relative overflow-hidden bg-background">
       <div className="container mx-auto px-6 text-center mb-16 relative z-10">
-        <Badge className="mb-4">Testimonials</Badge>
+        <Badge className="mb-4">{t("testimonials.badge")}</Badge>
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white">
-          Don't just take <span className="text-white/50">our word for it.</span>
+          {t("testimonials.title1")} <span className="text-white/50">{t("testimonials.title2")}</span>
         </h2>
       </div>
 

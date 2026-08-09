@@ -3,18 +3,21 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Zap, Shield, Layout, Code, Headset, TrendingUp, ArrowRight } from "lucide-react";
-import { useState } from "react";
-
-const reasons = [
-  { id: 1, title: "Fast Development", icon: Zap, desc: "Rapid prototyping and agile methodology ensure quick time-to-market without sacrificing quality. We deploy in weeks, not months.", color: "text-amber-500", bg: "bg-amber-500/10", border: "border-amber-500/20" },
-  { id: 2, title: "Security First", icon: Shield, desc: "Enterprise-grade security protocols built into the core of every application. Your data is encrypted, backed up, and protected.", color: "text-emerald-500", bg: "bg-emerald-500/10", border: "border-emerald-500/20" },
-  { id: 3, title: "Modern UI/UX", icon: Layout, desc: "Award-winning designs that captivate users and drive engagement. We don't just make it work, we make it unforgettable.", color: "text-blue-500", bg: "bg-blue-500/10", border: "border-blue-500/20" },
-  { id: 4, title: "Clean Code", icon: Code, desc: "Maintainable, scalable, and fully documented codebases adhering to strict industry best practices.", color: "text-purple-500", bg: "bg-purple-500/10", border: "border-purple-500/20" },
-  { id: 5, title: "Long-term Support", icon: Headset, desc: "Dedicated maintenance and support to ensure your product grows seamlessly with your business operations.", color: "text-rose-500", bg: "bg-rose-500/10", border: "border-rose-500/20" },
-  { id: 6, title: "Business Focused", icon: TrendingUp, desc: "Solutions engineered specifically to solve real business problems, increase efficiency, and maximize your ROI.", color: "text-cyan-500", bg: "bg-cyan-500/10", border: "border-cyan-500/20" },
-];
+import { useState, useMemo } from "react";
+import { useLanguage } from "@/lib/i18n";
 
 export function WhyChooseUs() {
+  const { t } = useLanguage();
+  
+  const reasons = useMemo(() => [
+    { id: 1, title: t("whyChooseUs.reasons.fastDev.title"), icon: Zap, desc: t("whyChooseUs.reasons.fastDev.desc"), color: "text-amber-500", bg: "bg-amber-500/10", border: "border-amber-500/20" },
+    { id: 2, title: t("whyChooseUs.reasons.security.title"), icon: Shield, desc: t("whyChooseUs.reasons.security.desc"), color: "text-emerald-500", bg: "bg-emerald-500/10", border: "border-emerald-500/20" },
+    { id: 3, title: t("whyChooseUs.reasons.uiux.title"), icon: Layout, desc: t("whyChooseUs.reasons.uiux.desc"), color: "text-blue-500", bg: "bg-blue-500/10", border: "border-blue-500/20" },
+    { id: 4, title: t("whyChooseUs.reasons.cleanCode.title"), icon: Code, desc: t("whyChooseUs.reasons.cleanCode.desc"), color: "text-purple-500", bg: "bg-purple-500/10", border: "border-purple-500/20" },
+    { id: 5, title: t("whyChooseUs.reasons.support.title"), icon: Headset, desc: t("whyChooseUs.reasons.support.desc"), color: "text-rose-500", bg: "bg-rose-500/10", border: "border-rose-500/20" },
+    { id: 6, title: t("whyChooseUs.reasons.business.title"), icon: TrendingUp, desc: t("whyChooseUs.reasons.business.desc"), color: "text-cyan-500", bg: "bg-cyan-500/10", border: "border-cyan-500/20" },
+  ], [t]);
+
   const [active, setActive] = useState(reasons[0].id);
 
   return (
@@ -22,15 +25,15 @@ export function WhyChooseUs() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col md:flex-row gap-12 items-end mb-20">
           <div className="max-w-2xl">
-            <Badge className="mb-6 bg-white/5 border-white/10 backdrop-blur-md">Why Choose Us</Badge>
+            <Badge className="mb-6 bg-white/5 border-white/10 backdrop-blur-md">{t("whyChooseUs.badge")}</Badge>
             <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-white leading-tight">
-              Engineered for <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent">Excellence</span>
+              {t("whyChooseUs.title1")} <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent">{t("whyChooseUs.title2")}</span>
             </h2>
           </div>
           <div className="md:ml-auto">
              <p className="text-white/50 text-lg max-w-sm font-light">
-               Partnering with us means gaining a dedicated technical team that cares about your success.
+               {t("whyChooseUs.description")}
              </p>
           </div>
         </div>

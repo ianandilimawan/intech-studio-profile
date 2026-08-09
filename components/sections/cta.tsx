@@ -3,8 +3,11 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { useLanguage } from "@/lib/i18n";
 
 export function CTA() {
+  const { t } = useLanguage();
+
   return (
     <section id="contact" className="py-32 relative overflow-hidden bg-[#020202]">
       <div className="absolute inset-0 bg-primary/5" />
@@ -24,18 +27,18 @@ export function CTA() {
           
           <div className="relative z-10">
             <h2 className="text-5xl md:text-7xl font-bold tracking-tighter text-white mb-8 leading-tight">
-              Let's Build Something <br className="hidden md:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-emerald-400 to-primary">Amazing Together.</span>
+              {t("cta.title1")} <br className="hidden md:block" />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-emerald-400 to-primary">{t("cta.title2")}</span>
             </h2>
             <p className="text-xl text-white/60 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-              Ready to elevate your digital presence? Partner with us to transform your ideas into world-class software solutions.
+              {t("cta.description")}
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <Link href="mailto:intechstudio8@gmail.com" className="relative group/btn w-full sm:w-auto block">
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-primary rounded-full blur opacity-40 group-hover/btn:opacity-100 transition duration-500 animate-pulse"></div>
                 <Button size="lg" className="relative w-full h-16 px-10 text-lg rounded-full bg-white text-black hover:bg-white/90 font-semibold shadow-xl">
-                  Book Consultation
+                  {t("cta.button")}
                 </Button>
               </Link>
             </div>

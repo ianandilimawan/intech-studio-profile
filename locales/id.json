@@ -43,5 +43,253 @@
         "desc": "Setiap produk yang kami buat dirancang dengan fokus obsesif pada pengalaman pengguna dan kesempurnaan visual."
       }
     }
+  },
+  "services": {
+    "badge": "Keahlian Kami",
+    "title1": "Semua yang Anda butuhkan",
+    "title2": "untuk mengembangkan bisnis.",
+    "subtitle": "Kami tidak sekadar menulis kode. Kami merancang solusi yang memberikan Anda keunggulan kompetitif.",
+    "items": {
+      "custom": {
+        "title": "Custom Software",
+        "desc": "Sistem skala perusahaan yang dibangun dengan arsitektur modern dan kode bersih untuk operasi berkinerja tinggi."
+      },
+      "pos": {
+        "title": "Sistem POS",
+        "desc": "Ekosistem Point of Sale yang lengkap dengan pemesanan QR canggih."
+      },
+      "whatsapp": {
+        "title": "WhatsApp Commerce",
+        "desc": "Pemesanan dan checkout otomatis langsung melalui WhatsApp."
+      },
+      "mobile": {
+        "title": "Aplikasi Mobile",
+        "desc": "Pengalaman aplikasi mobile native dan lintas platform."
+      },
+      "cloud": {
+        "title": "Cloud & API",
+        "desc": "Layanan backend yang tangguh dan integrasi pihak ketiga yang mulus."
+      }
+    }
+  },
+  "products": {
+    "badge": "Produk Unggulan",
+    "title1": "Solusi enterprise,",
+    "title2": "siap digunakan.",
+    "subtitle": "Kami tidak hanya membuat software kustom. Kami telah mengembangkan produk SaaS teruji yang memproses ribuan transaksi setiap harinya.",
+    "explore": "Jelajahi",
+    "items": {
+      "katalogin": {
+        "desc": "Platform SaaS headless yang memungkinkan bisnis membuat katalog digital dengan checkout langsung ke WhatsApp. Tanpa perlu unduh aplikasi.",
+        "features": [
+          {
+            "title": "Smart Cart",
+            "desc": "Pemesanan tanpa hambatan"
+          },
+          {
+            "title": "WhatsApp Sync",
+            "desc": "Alur chat otomatis"
+          },
+          {
+            "title": "Analytics",
+            "desc": "Pelacakan penjualan realtime"
+          },
+          {
+            "title": "Multi-Tenant",
+            "desc": "Kelola banyak cabang"
+          }
+        ]
+      },
+      "inpos": {
+        "desc": "Sistem Point of Sale cerdas yang menjembatani pemesanan pelanggan dengan otomatisasi dapur.",
+        "features": [
+          {
+            "title": "POS Terminal",
+            "desc": "Checkout super cepat"
+          },
+          {
+            "title": "QR Ordering",
+            "desc": "Layanan mandiri di meja"
+          },
+          {
+            "title": "Kitchen Display",
+            "desc": "Rute pesanan digital"
+          },
+          {
+            "title": "Smart Billing",
+            "desc": "Pisah tagihan & promo"
+          }
+        ]
+      }
+    }
+  },
+  "whyChooseUs": {
+    "badge": "Mengapa Memilih Kami",
+    "title1": "Dirancang untuk ",
+    "title2": "Keunggulan",
+    "description": "Bermitra dengan kami berarti mendapatkan tim teknis berdedikasi yang peduli dengan kesuksesan Anda.",
+    "reasons": {
+      "fastDev": {
+        "title": "Pengembangan Cepat",
+        "desc": "Prototipe cepat dan metodologi agile memastikan waktu ke pasar yang cepat tanpa mengorbankan kualitas. Kami merilis dalam hitungan minggu, bukan bulan."
+      },
+      "security": {
+        "title": "Keamanan Utama",
+        "desc": "Protokol keamanan tingkat enterprise dibangun di dalam inti setiap aplikasi. Data Anda dienkripsi, dicadangkan, dan dilindungi."
+      },
+      "uiux": {
+        "title": "UI/UX Modern",
+        "desc": "Desain pemenang penghargaan yang memikat pengguna dan mendorong interaksi. Kami tidak hanya membuatnya berfungsi, kami membuatnya tak terlupakan."
+      },
+      "cleanCode": {
+        "title": "Kode Bersih",
+        "desc": "Basis kode yang dapat dipelihara, skalabel, dan didokumentasikan sepenuhnya mengikuti praktik terbaik industri yang ketat."
+      },
+      "support": {
+        "title": "Dukungan Jangka Panjang",
+        "desc": "Pemeliharaan dan dukungan khusus untuk memastikan produk Anda berkembang mulus dengan operasi bisnis Anda."
+      },
+      "business": {
+        "title": "Fokus Bisnis",
+        "desc": "Solusi direkayasa khusus untuk memecahkan masalah bisnis nyata, meningkatkan efisiensi, dan memaksimalkan ROI Anda."
+      }
+    }
+  },
+  "process": {
+    "badge": "Proses Pengembangan",
+    "title1": "Bagaimana kami membangun ",
+    "title2": "produk hebat.",
+    "steps": {
+      "discovery": {
+        "title": "Penemuan",
+        "desc": "Memahami tujuan bisnis, target audiens, dan kebutuhan teknis Anda."
+      },
+      "wireframe": {
+        "title": "Wireframe & Desain UI",
+        "desc": "Merancang pengalaman pengguna yang intuitif dan antarmuka visual premium."
+      },
+      "development": {
+        "title": "Pengembangan",
+        "desc": "Rekayasa agile menggunakan tech stack modern untuk skalabilitas dan kinerja."
+      },
+      "testing": {
+        "title": "Pengujian & QA",
+        "desc": "Pengujian ketat untuk memastikan keamanan, stabilitas, dan implementasi yang sempurna."
+      },
+      "deployment": {
+        "title": "Penyebaran",
+        "desc": "Peluncuran mulus ke infrastruktur cloud tanpa downtime."
+      },
+      "support": {
+        "title": "Dukungan",
+        "desc": "Pemantauan, pembaruan, dan optimasi berkelanjutan untuk mendorong pertumbuhan."
+      }
+    }
+  },
+  "techStack": {
+    "badge": "Tech Stack",
+    "title1": "Didukung oleh ",
+    "title2": "Teknologi Modern",
+    "description": "Kami menggunakan framework terkemuka di industri dan infrastruktur tangguh untuk memastikan produk Anda aman, berskala, dan cepat."
+  },
+  "portfolio": {
+    "badge": "Karya Pilihan",
+    "title1": "Proyek ",
+    "title2": "unggulan.",
+    "viewAll": "Lihat Semua Proyek",
+    "viewCaseStudy": "Lihat Studi Kasus",
+    "projects": {
+      "katalogin": {
+        "title": "Katalogin ERP",
+        "category": "Aplikasi Web",
+        "desc": "Sistem ERP multi-tenant besar yang menangani ribuan transaksi B2B setiap hari."
+      },
+      "inpos": {
+        "title": "InPOS Terminal",
+        "category": "Fintech & POS",
+        "desc": "Analitik waktu nyata dan dashboard sistem POS dengan manajemen restoran lengkap."
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Testimoni",
+    "title1": "Jangan hanya percaya ",
+    "title2": "kata-kata kami.",
+    "items": {
+      "sarah": {
+        "name": "Sarah Jenkins",
+        "role": "CEO TechFlow",
+        "text": "Intech Studio sepenuhnya mengubah sistem lama kami menjadi arsitektur modern yang super cepat."
+      },
+      "david": {
+        "name": "David Chen",
+        "role": "Pendiri RetailX",
+        "text": "Sistem POS yang mereka bangun untuk kami mengurangi waktu checkout sebesar 40%. Benar-benar mengubah permainan."
+      },
+      "elena": {
+        "name": "Elena Rodriguez",
+        "role": "Operasional, Foodies",
+        "text": "Integrasi WhatsApp commerce mereka membantu kami menangkap demografis pelanggan yang sama sekali baru."
+      },
+      "michael": {
+        "name": "Michael Chang",
+        "role": "CTO FinSecure",
+        "text": "Tingkat kualitas kode dan keamanan yang mereka berikan tak tertandingi. Benar-benar agensi premium."
+      }
+    }
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title1": "Pertanyaan ",
+    "title2": "Umum",
+    "items": {
+      "timeline": {
+        "q": "Berapa lama biasanya timeline proyek Anda?",
+        "a": "Tergantung pada kompleksitas, proyek kami biasanya berkisar dari 2 hingga 6 bulan. Kami bekerja dalam sprint agile 2 minggu untuk memastikan pengiriman dan umpan balik yang berkelanjutan."
+      },
+      "support": {
+        "q": "Apakah Anda menyediakan dukungan pasca peluncuran?",
+        "a": "Ya. Kami menawarkan paket pemeliharaan dan dukungan berbasis SLA komprehensif untuk memastikan aplikasi Anda tetap aman, mutakhir, dan sepenuhnya dioptimalkan."
+      },
+      "tech": {
+        "q": "Teknologi apa yang Anda spesialisasi?",
+        "a": "Kami membangun terutama dengan Next.js, React, Node.js, Laravel, dan Go. Untuk mobile, kami menggunakan React Native atau Flutter. Kami deploy di AWS atau Google Cloud."
+      },
+      "legacy": {
+        "q": "Bisakah Anda berintegrasi dengan sistem lama (legacy) kami?",
+        "a": "Tentu saja. Kami memiliki pengalaman luas membangun middleware dan API aman untuk menghubungkan antarmuka modern dengan sistem perusahaan lama."
+      },
+      "pricing": {
+        "q": "Bagaimana Anda menangani harga proyek?",
+        "a": "Kami menawarkan kontrak harga tetap untuk ruang lingkup yang jelas dan time-and-materials untuk proyek yang dinamis dan berkembang. Setiap keterlibatan dimulai dengan fase penemuan yang terperinci."
+      }
+    }
+  },
+  "cta": {
+    "title1": "Mari Bangun Sesuatu ",
+    "title2": "Luar Biasa Bersama.",
+    "description": "Siap untuk meningkatkan kehadiran digital Anda? Bermitra dengan kami untuk mengubah ide Anda menjadi solusi perangkat lunak kelas dunia.",
+    "button": "Pesan Konsultasi"
+  },
+  "footer": {
+    "description": "Software house kelas dunia yang membangun produk digital kelas enterprise untuk perusahaan yang berpikiran maju.",
+    "services": {
+      "title": "Layanan",
+      "custom": "Custom Software",
+      "pos": "Sistem POS",
+      "whatsapp": "WhatsApp Commerce",
+      "uiux": "Desain UI/UX"
+    },
+    "products": {
+      "title": "Produk",
+      "katalogin": "Katalogin",
+      "inpos": "InPOS"
+    },
+    "company": {
+      "title": "Perusahaan",
+      "about": "Tentang Kami",
+      "contact": "Kontak",
+      "privacy": "Kebijakan Privasi"
+    }
   }
 }

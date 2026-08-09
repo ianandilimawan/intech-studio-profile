@@ -1,28 +1,30 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Plus, Minus } from "lucide-react";
-
-const faqs = [
-  { q: "What is your typical project timeline?", a: "Depending on the complexity, our projects usually range from 2 to 6 months. We work in 2-week agile sprints to ensure continuous delivery and feedback." },
-  { q: "Do you provide post-launch support?", a: "Yes. We offer comprehensive SLA-based maintenance and support packages to ensure your application remains secure, up-to-date, and fully optimized." },
-  { q: "What technologies do you specialize in?", a: "We build primarily with Next.js, React, Node.js, Laravel, and Go. For mobile, we use React Native or Flutter. We deploy on AWS or Google Cloud." },
-  { q: "Can you integrate with our existing legacy systems?", a: "Absolutely. We have extensive experience building middleware and secure APIs to connect modern interfaces with legacy enterprise systems." },
-  { q: "How do you handle project pricing?", a: "We offer both fixed-price contracts for well-defined scopes and time-and-materials for dynamic, evolving projects. Every engagement starts with a detailed discovery phase." },
-];
+import { useLanguage } from "@/lib/i18n";
 
 export function FAQ() {
+  const { t } = useLanguage();
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+  const faqs = useMemo(() => [
+    { q: t("faq.items.timeline.q"), a: t("faq.items.timeline.a") },
+    { q: t("faq.items.support.q"), a: t("faq.items.support.a") },
+    { q: t("faq.items.tech.q"), a: t("faq.items.tech.a") },
+    { q: t("faq.items.legacy.q"), a: t("faq.items.legacy.a") },
+    { q: t("faq.items.pricing.q"), a: t("faq.items.pricing.a") },
+  ], [t]);
 
   return (
     <section className="py-32 relative">
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="text-center mb-16">
-          <Badge className="mb-4">FAQ</Badge>
+          <Badge className="mb-4">{t("faq.badge")}</Badge>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white">
-            Common <span className="text-white/50">Questions</span>
+            {t("faq.title1")} <span className="text-white/50">{t("faq.title2")}</span>
           </h2>
         </div>
 

@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useLanguage } from "@/lib/i18n";
 
 export function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-card/50 border-t border-white/10 pt-20 pb-10 relative overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-[1px] bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
@@ -23,48 +28,47 @@ export function Footer() {
               </span>
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
-              World-class software house building enterprise-grade digital
-              products for forward-thinking companies.
+              {t("footer.description")}
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">Services</h4>
+            <h4 className="font-semibold text-white mb-4">{t("footer.services.title")}</h4>
             <ul className="space-y-2 text-sm text-white/60">
               <li>
                 <Link href="#" className="hover:text-primary transition-colors">
-                  Custom Software
+                  {t("footer.services.custom")}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-primary transition-colors">
-                  POS Systems
+                  {t("footer.services.pos")}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-primary transition-colors">
-                  WhatsApp Commerce
+                  {t("footer.services.whatsapp")}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-primary transition-colors">
-                  UI/UX Design
+                  {t("footer.services.uiux")}
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">Products</h4>
+            <h4 className="font-semibold text-white mb-4">{t("footer.products.title")}</h4>
             <ul className="space-y-2 text-sm text-white/60">
               <li>
                 <Link href="#" className="hover:text-primary transition-colors">
-                  Katalogin
+                  {t("footer.products.katalogin")}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-primary transition-colors">
-                  InPOS
+                  {t("footer.products.inpos")}
                 </Link>
               </li>
               {/* <li><Link href="#" className="hover:text-primary transition-colors">Enterprise Boilerplate</Link></li> */}
@@ -72,14 +76,14 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-white mb-4">Company</h4>
+            <h4 className="font-semibold text-white mb-4">{t("footer.company.title")}</h4>
             <ul className="space-y-2 text-sm text-white/60">
               <li>
                 <Link
                   href="/#about"
                   className="hover:text-primary transition-colors"
                 >
-                  About Us
+                  {t("footer.company.about")}
                 </Link>
               </li>
               {/* <li><Link href="#" className="hover:text-primary transition-colors">Careers</Link></li> */}
@@ -88,7 +92,7 @@ export function Footer() {
                   href="mailto:intechstudio8@gmail.com"
                   className="hover:text-primary transition-colors"
                 >
-                  Contact
+                  {t("footer.company.contact")}
                 </Link>
               </li>
               <li>
@@ -96,7 +100,7 @@ export function Footer() {
                   href="/privacy-policy"
                   className="hover:text-primary transition-colors"
                 >
-                  Privacy Policy
+                  {t("footer.company.privacy")}
                 </Link>
               </li>
             </ul>

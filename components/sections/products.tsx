@@ -8,50 +8,54 @@ import {
   ShoppingCart, BarChart3, MessageCircle, Users, 
   LayoutDashboard, QrCode, ChefHat, Receipt, ArrowRight 
 } from "lucide-react";
-
-const products = [
-  {
-    id: "katalogin",
-    name: "Katalogin",
-    logo: "/projects/katalogin/logo.jpg",
-    tag: "WhatsApp Commerce",
-    desc: "A headless SaaS platform enabling businesses to build digital catalogs with direct WhatsApp checkout. No app download required.",
-    features: [
-      { icon: ShoppingCart, title: "Smart Cart", desc: "Frictionless ordering" },
-      { icon: MessageCircle, title: "WhatsApp Sync", desc: "Automated chat flows" },
-      { icon: BarChart3, title: "Analytics", desc: "Real-time sales tracking" },
-      { icon: Users, title: "Multi-Tenant", desc: "Manage multiple branches" },
-    ],
-    gradient: "from-emerald-500/10 via-green-500/5 to-transparent",
-    accent: "text-emerald-500",
-    bgAccent: "bg-emerald-500",
-    image: "/projects/katalogin/mockup-admin.png",
-    imageAlt: "Katalogin Dashboard",
-    floatingImage: "/projects/katalogin/mockup-catalog.png",
-    floatingDevice: "mobile",
-  },
-  {
-    id: "inpos",
-    name: "InPOS",
-    logo: "/projects/inpos/logo.png",
-    tag: "Modern POS Ecosystem",
-    desc: "An intelligent Point of Sale system bridging front-of-house ordering with back-of-house kitchen automation.",
-    features: [
-      { icon: LayoutDashboard, title: "POS Terminal", desc: "Lightning fast checkout" },
-      { icon: QrCode, title: "QR Ordering", desc: "Table-side self service" },
-      { icon: ChefHat, title: "Kitchen Display", desc: "Digital ticket routing" },
-      { icon: Receipt, title: "Smart Billing", desc: "Split payments & promos" },
-    ],
-    gradient: "from-blue-500/10 via-indigo-500/5 to-transparent",
-    accent: "text-blue-500",
-    bgAccent: "bg-blue-500",
-    image: "/projects/inpos/mockup-pos-dark.png",
-    imageAlt: "InPOS Terminal",
-    floatingImage: "/projects/inpos/mockup-pos-list-dark.png",
-  }
-];
+import { useLanguage } from "@/lib/i18n";
+import { useMemo } from "react";
 
 export function Products() {
+  const { t } = useLanguage();
+
+  const products = useMemo(() => [
+    {
+      id: "katalogin",
+      name: "Katalogin",
+      logo: "/projects/katalogin/logo.jpg",
+      tag: "WhatsApp Commerce",
+      desc: t("products.items.katalogin.desc"),
+      features: [
+        { icon: ShoppingCart, title: t("products.items.katalogin.features.0.title"), desc: t("products.items.katalogin.features.0.desc") },
+        { icon: MessageCircle, title: t("products.items.katalogin.features.1.title"), desc: t("products.items.katalogin.features.1.desc") },
+        { icon: BarChart3, title: t("products.items.katalogin.features.2.title"), desc: t("products.items.katalogin.features.2.desc") },
+        { icon: Users, title: t("products.items.katalogin.features.3.title"), desc: t("products.items.katalogin.features.3.desc") },
+      ],
+      gradient: "from-emerald-500/10 via-green-500/5 to-transparent",
+      accent: "text-emerald-500",
+      bgAccent: "bg-emerald-500",
+      image: "/projects/katalogin/mockup-admin.png",
+      imageAlt: "Katalogin Dashboard",
+      floatingImage: "/projects/katalogin/mockup-catalog.png",
+      floatingDevice: "mobile",
+    },
+    {
+      id: "inpos",
+      name: "InPOS",
+      logo: "/projects/inpos/logo.png",
+      tag: "Modern POS Ecosystem",
+      desc: t("products.items.inpos.desc"),
+      features: [
+        { icon: LayoutDashboard, title: t("products.items.inpos.features.0.title"), desc: t("products.items.inpos.features.0.desc") },
+        { icon: QrCode, title: t("products.items.inpos.features.1.title"), desc: t("products.items.inpos.features.1.desc") },
+        { icon: ChefHat, title: t("products.items.inpos.features.2.title"), desc: t("products.items.inpos.features.2.desc") },
+        { icon: Receipt, title: t("products.items.inpos.features.3.title"), desc: t("products.items.inpos.features.3.desc") },
+      ],
+      gradient: "from-blue-500/10 via-indigo-500/5 to-transparent",
+      accent: "text-blue-500",
+      bgAccent: "bg-blue-500",
+      image: "/projects/inpos/mockup-pos-dark.png",
+      imageAlt: "InPOS Terminal",
+      floatingImage: "/projects/inpos/mockup-pos-list-dark.png",
+    }
+  ], [t]);
+
   return (
     <section id="products" className="py-32 relative bg-[#050505] border-y border-white/5 overflow-hidden">
       {/* Background gradients */}
@@ -59,13 +63,13 @@ export function Products() {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col items-center text-center mb-32">
-          <Badge className="mb-6 border-white/10 bg-white/5 backdrop-blur-md">Featured Products</Badge>
+          <Badge className="mb-6 border-white/10 bg-white/5 backdrop-blur-md">{t("products.badge")}</Badge>
           <h2 className="text-5xl md:text-7xl font-bold tracking-tighter text-white mb-6 leading-tight">
-            Enterprise solutions, <br />
-            <span className="text-white/40">ready to deploy.</span>
+            {t("products.title1")} <br />
+            <span className="text-white/40">{t("products.title2")}</span>
           </h2>
           <p className="text-lg text-white/50 max-w-2xl font-light">
-            We don't just build custom software. We've developed battle-tested SaaS products that power thousands of daily transactions.
+            {t("products.subtitle")}
           </p>
         </div>
 
@@ -110,7 +114,7 @@ export function Products() {
 
                 <div>
                   <Button variant="outline" className="group h-12 px-8 rounded-full border-white/10 hover:bg-white/10">
-                    Explore {product.name} 
+                    {t("products.explore")} {product.name} 
                     <ArrowRight className="w-4 h-4 ml-2 opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
                   </Button>
                 </div>

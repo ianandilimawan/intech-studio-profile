@@ -141,8 +141,15 @@ export function Products() {
                         <ArrowRight className="w-4 h-4 ml-2 opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
                       </Button>
                     </a>
+                  ) : product.id === "budgetin" ? (
+                    <a href="https://budgetin.intechstudio.id" target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline" className="group h-12 px-8 rounded-full border-white/10 hover:bg-white/10">
+                        {t("products.explore")} {product.name} 
+                        <ArrowRight className="w-4 h-4 ml-2 opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+                      </Button>
+                    </a>
                   ) : (
-                    <a href={`mailto:intechstudio8@gmail.com?subject=Permintaan%20Demo%20${product.name}%20-%20Intech%20Studio&body=Halo%20Intech%20Studio,%0A%0ASaya%20tertarik%20untuk%20mencoba%20demo%20aplikasi%20${product.name}.%20Mohon%20informasi%20akses%20dan%20demonstrasinya.%0A%0ATerima%20kasih.`}>
+                    <a href="mailto:intechstudio8@gmail.com?subject=Permintaan%20Demo%20InPOS%20-%20Intech%20Studio&body=Halo%20Intech%20Studio,%0A%0ASaya%20tertarik%20untuk%20mencoba%20demo%20aplikasi%20InPOS.%20Mohon%20informasi%20akses%20dan%20demonstrasinya.%0A%0ATerima%20kasih.">
                       <Button variant="outline" className="group h-12 px-8 rounded-full border-white/10 hover:bg-white/10">
                         {t("products.requestDemo")}
                         <ArrowRight className="w-4 h-4 ml-2 opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />

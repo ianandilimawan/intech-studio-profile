@@ -6,7 +6,8 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { 
   ShoppingCart, BarChart3, MessageCircle, Users, 
-  LayoutDashboard, QrCode, ChefHat, Receipt, ArrowRight 
+  LayoutDashboard, QrCode, ChefHat, Receipt, ArrowRight,
+  Wallet, PieChart, RefreshCw, FileSpreadsheet 
 } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 import { useMemo } from "react";
@@ -53,6 +54,26 @@ export function Products() {
       image: "/projects/inpos/mockup-pos-dark.png",
       imageAlt: "InPOS Terminal",
       floatingImage: "/projects/inpos/mockup-pos-list-dark.png",
+    },
+    {
+      id: "budgetin",
+      name: "BudgetIn",
+      logo: "/projects/budgetin/logo.png",
+      tag: "Smart Financial & Multi-Wallet",
+      desc: t("products.items.budgetin.desc"),
+      features: [
+        { icon: Wallet, title: t("products.items.budgetin.features.0.title"), desc: t("products.items.budgetin.features.0.desc") },
+        { icon: PieChart, title: t("products.items.budgetin.features.1.title"), desc: t("products.items.budgetin.features.1.desc") },
+        { icon: RefreshCw, title: t("products.items.budgetin.features.2.title"), desc: t("products.items.budgetin.features.2.desc") },
+        { icon: FileSpreadsheet, title: t("products.items.budgetin.features.3.title"), desc: t("products.items.budgetin.features.3.desc") },
+      ],
+      gradient: "from-cyan-500/10 via-emerald-500/5 to-transparent",
+      accent: "text-cyan-400",
+      bgAccent: "bg-cyan-500",
+      image: "/projects/budgetin/mockup-dashboard.png",
+      imageAlt: "BudgetIn Workspace",
+      floatingImage: "/projects/budgetin/mockup-mobile.png",
+      floatingDevice: "mobile",
     }
   ], [t]);
 
@@ -121,7 +142,7 @@ export function Products() {
                       </Button>
                     </a>
                   ) : (
-                    <a href="mailto:intechstudio8@gmail.com?subject=Permintaan%20Demo%20InPOS%20-%20Intech%20Studio&body=Halo%20Intech%20Studio,%0A%0ASaya%20tertarik%20untuk%20mencoba%20demo%20aplikasi%20InPOS.%20Mohon%20informasi%20lebih%20lanjut.%0A%0ATerima%20kasih.">
+                    <a href={`mailto:intechstudio8@gmail.com?subject=Permintaan%20Demo%20${product.name}%20-%20Intech%20Studio&body=Halo%20Intech%20Studio,%0A%0ASaya%20tertarik%20untuk%20mencoba%20demo%20aplikasi%20${product.name}.%20Mohon%20informasi%20akses%20dan%20demonstrasinya.%0A%0ATerima%20kasih.`}>
                       <Button variant="outline" className="group h-12 px-8 rounded-full border-white/10 hover:bg-white/10">
                         {t("products.requestDemo")}
                         <ArrowRight className="w-4 h-4 ml-2 opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />

@@ -71,6 +71,11 @@ export function Footer() {
                   {t("footer.products.inpos")}
                 </Link>
               </li>
+              <li>
+                <Link href="#" className="hover:text-primary transition-colors">
+                  {t("footer.products.budgetin")}
+                </Link>
+              </li>
               {/* <li><Link href="#" className="hover:text-primary transition-colors">Enterprise Boilerplate</Link></li> */}
             </ul>
           </div>

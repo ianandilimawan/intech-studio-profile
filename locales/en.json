@@ -121,6 +121,27 @@
             "desc": "Split payments & promos"
           }
         ]
+      },
+      "budgetin": {
+        "desc": "A modern personal & business finance app to manage multi-wallet balances (Banks, E-Wallets, Cash), track category budget limits, and automate recurring transactions.",
+        "features": [
+          {
+            "title": "Multi-Wallet",
+            "desc": "Track Banks, E-Wallets & Cash"
+          },
+          {
+            "title": "Budget Limits",
+            "desc": "Control spending per category"
+          },
+          {
+            "title": "Recurring Schedules",
+            "desc": "Automate bills & subscriptions"
+          },
+          {
+            "title": "Cash Flow Analytics",
+            "desc": "Excel reports & visual trends"
+          }
+        ]
       }
     }
   },
@@ -209,6 +230,11 @@
         "title": "InPOS Terminal",
         "category": "Fintech & POS",
         "desc": "Real-time analytics and POS system dashboard with complete restaurant management."
+      },
+      "budgetin": {
+        "title": "BudgetIn Finance",
+        "category": "Fintech & Personal Finance",
+        "desc": "A modern cash flow and multi-wallet management platform featuring visual budget limit tracking."
       }
     }
   },
@@ -284,7 +310,8 @@
     "products": {
       "title": "Products",
       "katalogin": "Katalogin",
-      "inpos": "InPOS"
+      "inpos": "InPOS",
+      "budgetin": "BudgetIn"
     },
     "company": {
       "title": "Company",

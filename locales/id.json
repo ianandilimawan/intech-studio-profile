@@ -121,6 +121,27 @@
             "desc": "Pisah tagihan & promo"
           }
         ]
+      },
+      "budgetin": {
+        "desc": "Aplikasi pengelola keuangan & multi-dompet modern untuk melacak saldo rekening bank, e-wallet, limit anggaran, dan transaksi rutin terjadwal.",
+        "features": [
+          {
+            "title": "Multi-Dompet",
+            "desc": "Lacak Bank, E-Wallet & Tunai"
+          },
+          {
+            "title": "Limit Anggaran",
+            "desc": "Kontrol pengeluaran per kategori"
+          },
+          {
+            "title": "Transaksi Rutin",
+            "desc": "Jadwal otomatis & tagihan"
+          },
+          {
+            "title": "Analisis Cash Flow",
+            "desc": "Ekspor laporan Excel & tren"
+          }
+        ]
       }
     }
   },
@@ -209,6 +230,11 @@
         "title": "InPOS Terminal",
         "category": "Fintech & POS",
         "desc": "Analitik waktu nyata dan dashboard sistem POS dengan manajemen restoran lengkap."
+      },
+      "budgetin": {
+        "title": "BudgetIn Finance",
+        "category": "Fintech & Personal Finance",
+        "desc": "Platform pencatatan arus kas dan manajemen multi-rekening dengan pemantauan limit anggaran visual."
       }
     }
   },
@@ -284,7 +310,8 @@
     "products": {
       "title": "Produk",
       "katalogin": "Katalogin",
-      "inpos": "InPOS"
+      "inpos": "InPOS",
+      "budgetin": "BudgetIn"
     },
     "company": {
       "title": "Perusahaan",

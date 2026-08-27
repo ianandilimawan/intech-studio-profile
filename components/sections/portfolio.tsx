@@ -28,6 +28,15 @@ export function Portfolio() {
       color: "from-blue-500/20 via-indigo-500/10 to-transparent",
       accent: "bg-blue-500",
       image: "/projects/inpos/mockup-pos-dark.png",
+    },
+    {
+      id: 3,
+      title: t("portfolio.projects.budgetin.title"),
+      category: t("portfolio.projects.budgetin.category"),
+      desc: t("portfolio.projects.budgetin.desc"),
+      color: "from-cyan-500/20 via-emerald-500/10 to-transparent",
+      accent: "bg-cyan-500",
+      image: "/projects/budgetin/mockup-dashboard.png",
     }
   ], [t]);
 
@@ -55,7 +64,7 @@ export function Portfolio() {
           </a>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {projects.map((project, i) => (
             <motion.div
               key={project.id}
@@ -64,10 +73,10 @@ export function Portfolio() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{
                 duration: 0.8,
-                delay: (i % 2) * 0.2,
+                delay: (i % 3) * 0.15,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className={`group cursor-pointer flex flex-col ${i % 2 !== 0 ? "md:mt-24" : ""}`}
+              className="group cursor-pointer flex flex-col"
             >
               <div
                 className={`relative aspect-[4/3] rounded-[2rem] overflow-hidden mb-8 bg-[#0a0a0a] border border-white/10 p-6 flex flex-col items-center justify-center transform-gpu transition-all duration-700 group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)]`}
